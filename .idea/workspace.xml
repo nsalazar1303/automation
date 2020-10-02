@@ -4,7 +4,11 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/auto/ui/pageObject/Producto.java" line="98" mnemonic="7" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d01daba-e0a5-46c8-b592-6046469c4fb8" name="Default Changelist" comment="" />
+    <list default="true" id="3d01daba-e0a5-46c8-b592-6046469c4fb8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/e2e/TestAddProductHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/e2e/TestAddProductHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/e2e/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/e2e/TestBase.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,21 +23,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/auto/ui/pageObject/ShoppingCart.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1617">
-              <caret line="86" column="60" selection-start-line="85" selection-start-column="10" selection-end-line="86" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/auto/ui/pageObject/CheckOut.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2079">
+            <state relative-caret-position="1455">
               <caret line="107" column="17" selection-start-line="107" selection-start-column="17" selection-end-line="107" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -45,10 +37,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/auto/ui/pageObject/PageBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
+            <state relative-caret-position="6">
               <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#359#367#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -57,8 +50,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/e2e/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+            <state relative-caret-position="300">
+              <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/e2e/TestAddProductHomePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="38" column="61" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,15 +72,17 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/e2e/TestAddProductHomePage.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1575">
-              <caret line="86" column="16" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="630">
+              <caret line="30" column="17" selection-start-line="29" selection-start-column="16" selection-end-line="30" selection-end-column="17" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/automation.iml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -99,7 +106,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/auto/ui/pageObject/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
+            <state relative-caret-position="21">
               <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -147,13 +154,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/auto/ui/OpenGoogle.java" />
         <option value="$PROJECT_DIR$/src/test/java/e2e/OpenGoogle.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/e2e/TestBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/auto/ui/pageObject/Login.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/auto/ui/pageObject/CheckOut.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/auto/ui/pageObject/PageBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/auto/ui/pageObject/Producto.java" />
-        <option value="$PROJECT_DIR$/src/test/java/e2e/TestAddProductHomePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/auto/ui/pageObject/ShoppingCart.java" />
+        <option value="$PROJECT_DIR$/src/test/java/e2e/TestBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/e2e/TestAddProductHomePage.java" />
       </list>
     </option>
   </component>
@@ -180,8 +187,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="1577" />
+    <option name="y" value="-7" />
     <option name="width" value="1936" />
     <option name="height" value="1096" />
   </component>
@@ -191,6 +198,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -255,11 +263,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1597437086431" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1601672961316" />
     <property name="last_opened_file_path" value="$USER_HOME$/OneDrive - ENDAVA/Documents/Testing Endava/Automation/Project Automation/study-group-automation" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -360,24 +367,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestAddProductHomePage - 2020.08.14 at 14h 41m 39s.xml">
-      <configuration name="TestAddProductHomePage" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestAddProductHomePage - 2020.08.14 at 14h 49m 25s.xml">
-      <configuration name="TestAddProductHomePage" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestAddProductHomePage - 2020.08.14 at 14h 59m 20s.xml">
-      <configuration name="TestAddProductHomePage" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestAddProductHomePage - 2020.08.14 at 15h 00m 35s.xml">
-      <configuration name="TestAddProductHomePage" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestAddProductHomePage - 2020.08.14 at 15h 02m 17s.xml">
-      <configuration name="TestAddProductHomePage" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestAddProductHomePage - 2020.08.14 at 15h 03m 45s.xml">
-      <configuration name="TestAddProductHomePage" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="TestAddProductHomePage - 2020.08.14 at 15h 05m 37s.xml">
       <configuration name="TestAddProductHomePage" configurationId="TestNG" />
     </history-entry>
@@ -388,6 +377,24 @@
       <configuration name="TestAddProductHomePage" configurationId="TestNG" />
     </history-entry>
     <history-entry file="TestAddProductHomePage - 2020.08.14 at 15h 19m 36s.xml">
+      <configuration name="TestAddProductHomePage" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestAddProductHomePage - 2020.09.30 at 16h 59m 42s.xml">
+      <configuration name="TestAddProductHomePage" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestAddProductHomePage - 2020.09.30 at 17h 00m 24s.xml">
+      <configuration name="TestAddProductHomePage" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestAddProductHomePage - 2020.10.02 at 15h 51m 43s.xml">
+      <configuration name="TestAddProductHomePage" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestAddProductHomePage - 2020.10.02 at 15h 58m 04s.xml">
+      <configuration name="TestAddProductHomePage" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestAddProductHomePage - 2020.10.02 at 16h 00m 27s.xml">
+      <configuration name="TestAddProductHomePage" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestAddProductHomePage - 2020.10.02 at 16h 06m 09s.xml">
       <configuration name="TestAddProductHomePage" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -401,9 +408,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49729145" visible="true" weight="0.27771854" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49729145" visible="true" weight="0.28091684" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -412,12 +420,12 @@
       <window_info id="Favorites" order="6" sideWeight="0.50270855" side_tool="true" weight="0.2553305" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4182015" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4182015" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32827735" />
@@ -477,13 +485,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="30" column="17" selection-start-line="29" selection-start-column="16" selection-end-line="30" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
@@ -504,36 +505,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/auto/ui/pageObject/PageBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/e2e/TestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/e2e/TestAddProductHomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1575">
-          <caret line="86" column="16" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1827">
@@ -548,16 +519,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/auto/ui/pageObject/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/auto/ui/pageObject/Producto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2562">
@@ -568,10 +529,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="30" column="17" selection-start-line="29" selection-start-column="16" selection-end-line="30" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automation.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/auto/ui/pageObject/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/auto/ui/pageObject/PageBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#359#367#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/auto/ui/pageObject/CheckOut.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2079">
+        <state relative-caret-position="1455">
           <caret line="107" column="17" selection-start-line="107" selection-start-column="17" selection-end-line="107" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/e2e/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/e2e/TestAddProductHomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="38" column="61" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

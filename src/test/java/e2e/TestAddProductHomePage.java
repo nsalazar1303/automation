@@ -32,11 +32,11 @@ public class TestAddProductHomePage extends TestBase {
 
 
         addressDelivery = new JsonObject();
-        addressDelivery.addProperty("nameUser" , "Natalia Salazar");
-        addressDelivery.addProperty("addressUser", "3080 Midway Road");
-        addressDelivery.addProperty("cityUser", "Fort Smith, Arkansas 72901");
+        addressDelivery.addProperty("nameUser" , "Natalia Test");
+        addressDelivery.addProperty("addressUser", "Calle 56 No. 420-89");
+        addressDelivery.addProperty("cityUser", "Medellin, California 80210");
         addressDelivery.addProperty("countryUser", "United States");
-        addressDelivery.addProperty("mobileUser", "479-382-9483");
+        addressDelivery.addProperty("mobileUser", "3128957845");
     }
 
     @Test(testName = "Add two products to Cart- Popular and Best Seller",priority = 0)
@@ -85,8 +85,6 @@ public class TestAddProductHomePage extends TestBase {
 
     @Test(testName = "Delete item to cart", priority = 5)
     public void totalCheckOut() throws InterruptedException {
-       //Assert.assertEquals(homepage.Total_price, numberCart.getTotalInShoppingCart());
-       //numberCart.deleteItemFromCart("Printed Summer Dress");
         homepage.Total_price=homepage.Total_price-numberCart.deleteItemFromCart("Printed Chiffon Dress");
         Assert.assertEquals(homepage.Total_price,numberCart.getTotalInShoppingCart());
     }

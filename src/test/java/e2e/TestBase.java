@@ -13,7 +13,7 @@ public class TestBase  {
 
     @BeforeSuite
     public void beforeAll(){
-        WebDriverManager.chromedriver().version("83.0.4103.39").setup();
+        WebDriverManager.chromedriver().version("85.0.4183.87").setup();
         driver= new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("http://automationpractice.com/");
