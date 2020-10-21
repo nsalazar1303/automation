@@ -10,11 +10,13 @@ import java.util.List;
 public class PageBase {
 
 
-
+//Properties
 
 
     public WebDriver driver;
     public Actions over ;
+    public static String lastOrderReference;
+    public static float totalValue;
 
     public static List<String> summaryProducts = new ArrayList<String>();
 

@@ -1,11 +1,17 @@
 package com.auto.ui.pageObject;
 
 import com.google.gson.JsonObject;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 import org.w3c.dom.events.EventException;
+
+import java.util.List;
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
 
 public class CheckOut extends ShoppingCart {
 
@@ -38,10 +44,26 @@ public class CheckOut extends ShoppingCart {
     WebElement valueShipping;
     @FindBy(xpath="//span[@id='total_price']")
     WebElement CheckoutValueTotal;
+    @FindBy(xpath="//a[@class='bankwire']")
+    WebElement paymentMethod;
+    @FindBy(xpath="//span[@id='amount']")
+    WebElement valueAmount;
+    @FindBy(xpath="//button[@class='button btn btn-default button-medium']")
+    WebElement confirmMyOrder;
+    @FindBy(xpath="//span[@class='price']")
+    WebElement valueAmountConfirm;
+    @FindBy(xpath="//div[@class='box']")
+    WebElement orderReference;
+    @FindBy(xpath="//a[@class='button-exclusive btn btn-default']")
+    WebElement backToOrders;
 
 
 
 
+//properties
+
+String lastOrderReference;
+Float totalValue;
 
 
     public void clicCheckOut(boolean proceed ){
@@ -107,10 +129,52 @@ public class CheckOut extends ShoppingCart {
 
     public float checkValueTotal(){
 
-        float totalValue= Float.parseFloat(CheckoutValueTotal.getText().replace("$",""));
+        totalValue= Float.parseFloat(CheckoutValueTotal.getText().replace("$",""));
         return totalValue;
 
     }
+
+    public void clicPaymentMethod() throws InterruptedException{
+        Thread.sleep(2000);
+        paymentMethod.click();
+
+    }
+
+    public float getAmount(){
+        float getAmount= Float.parseFloat(valueAmount.getText().replace("$",""));
+        return getAmount;
+    }
+
+    public void clicConfirmOrder(){
+        confirmMyOrder.click();
+    }
+
+
+    public float getAmountConfirm(){
+        float getAmountConfirm= Float.parseFloat(valueAmountConfirm.getText().replace("$",""));
+        return getAmountConfirm;
+    }
+
+    public String orderReference(){
+        Pattern pattern = Pattern.compile("([A-Z]{9})");
+
+        Matcher matcher = pattern.matcher(orderReference.getText());
+        matcher.find();
+        lastOrderReference=  matcher.group(1);
+        System.out.println("Order Reference " + lastOrderReference);
+
+       return lastOrderReference;
+
+
+    }
+
+    public void clicBackToOrders(){
+        backToOrders.click();
+    }
+
+
+
+
 }
 
 

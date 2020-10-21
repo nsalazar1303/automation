@@ -3,6 +3,7 @@ package e2e;
 import com.auto.ui.pageObject.*;
 import com.google.common.collect.Lists;
 import com.google.gson.JsonObject;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeSuite;
@@ -22,12 +23,14 @@ public class TestAddProductHomePage extends TestBase {
     CheckOut checkOut;
     Login logInLogOut;
     JsonObject addressDelivery;
+    MyAccount myAccount;
 
     @BeforeSuite
     public void BeforeAll(){
         homepage = PageFactory.initElements(driver,Producto.class);
         numberCart = PageFactory.initElements(driver,ShoppingCart.class);
         checkOut = PageFactory.initElements(driver,CheckOut.class);
+        myAccount= PageFactory.initElements(driver,MyAccount.class);
         logInLogOut = PageFactory.initElements(driver,Login.class);
 
 
@@ -133,15 +136,39 @@ public class TestAddProductHomePage extends TestBase {
 
     @Test(testName ="Products confirmation and Payment method", priority=10)
     public void paymentConfirmProducts() throws InterruptedException {
-        Assert.assertEquals(homepage.Total_price,numberCart.getTotalInShoppingCart());
-        System.out.println("Total price "+numberCart.getTotalInShoppingCart());
+        //Assert.assertEquals(homepage.Total_price,numberCart.getTotalInShoppingCart());
+        //System.out.println("Total price "+numberCart.getTotalInShoppingCart());
         Assert.assertEquals(checkOut.checkValueShipping(),2);
         System.out.println("Total shipping "+checkOut.checkValueShipping());
         Assert.assertEquals(homepage.Total_price+checkOut.checkValueShipping(),checkOut.checkValueTotal());
         System.out.println("Total Checkout "+checkOut.checkValueTotal());
+        //Float Valor= checkOut.checkValueTotal();
+        PageBase.totalValue=checkOut.checkValueTotal();
         System.out.println("Product lists" + numberCart.getsProductsNameInCart());
         System.out.println("summary products" + PageBase.summaryProducts);
         Assert.assertEquals(numberCart.getsProductsNameInCart(),PageBase.summaryProducts);
+        checkOut.clicPaymentMethod();
+        System.out.println("Clicked method payment");
+        Float getAmount=checkOut.getAmount();
+        checkOut.clicConfirmOrder();
+        System.out.println("Clicked Confirm my Order");
+        Float getAmountConfirm=checkOut.getAmountConfirm();
+        Assert.assertEquals(getAmount,getAmountConfirm);
+        String orderReference=checkOut.orderReference();
+        checkOut.clicBackToOrders();
+        String orderNumber= myAccount.validateOrderReference(orderReference);
+        Assert.assertEquals(orderReference,orderNumber);
+        System.out.println("Confirmed my Order Number " +orderNumber);
+        PageBase.lastOrderReference= orderNumber;
+
+    }
+
+    @Test(testName ="My Account and order history", priority=11)
+    public void myAccountHistory() throws InterruptedException {
+        String orderNumber= myAccount.validateOrderReference(PageBase.lastOrderReference);
+        Assert.assertEquals(PageBase.lastOrderReference,orderNumber);
+        System.out.println("Confirmed my Order Number " +orderNumber);
+        Assert.assertEquals(PageBase.totalValue,myAccount.validateAmount(orderNumber));
     }
 }
 
