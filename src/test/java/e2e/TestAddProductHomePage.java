@@ -3,6 +3,7 @@ package e2e;
 import com.auto.ui.pageObject.*;
 import com.google.common.collect.Lists;
 import com.google.gson.JsonObject;
+import org.json.simple.JSONObject;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -22,7 +23,7 @@ public class TestAddProductHomePage extends TestBase {
     ShoppingCart numberCart;
     CheckOut checkOut;
     Login logInLogOut;
-    JsonObject addressDelivery;
+
     MyAccount myAccount;
 
     @BeforeSuite
@@ -34,12 +35,7 @@ public class TestAddProductHomePage extends TestBase {
         logInLogOut = PageFactory.initElements(driver,Login.class);
 
 
-        addressDelivery = new JsonObject();
-        addressDelivery.addProperty("nameUser" , "Natalia Test");
-        addressDelivery.addProperty("addressUser", "Calle 56 No. 420-89");
-        addressDelivery.addProperty("cityUser", "Medellin, California 80210");
-        addressDelivery.addProperty("countryUser", "United States");
-        addressDelivery.addProperty("mobileUser", "3128957845");
+
     }
 
     @Test(testName = "Add two products to Cart- Popular and Best Seller",priority = 0)
@@ -107,9 +103,9 @@ public class TestAddProductHomePage extends TestBase {
       Assert.assertEquals( logInLogOut.isLogIn(),true);
     }
 
-    @Test(testName ="Validate delivery address", priority=8)
-    public void validateDeliveryAddress() throws InterruptedException {
-      Assert.assertEquals(addressDelivery,checkOut.getDeliveryAddress());
+    @Test(testName ="Validate delivery address",dataProviderClass = data.DataSource.class ,dataProvider = "addressDelivery" ,priority=8)
+    public void validateDeliveryAddress(JSONObject addressDeliveryData) throws InterruptedException {
+      Assert.assertEquals(addressDeliveryData,checkOut.getDeliveryAddress());
         System.out.println("Validated sucessfull address");
     }
 

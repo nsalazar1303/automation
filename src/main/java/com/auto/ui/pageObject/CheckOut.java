@@ -1,6 +1,7 @@
 package com.auto.ui.pageObject;
 
 import com.google.gson.JsonObject;
+import org.json.simple.JSONObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -79,15 +80,13 @@ Float totalValue;
 
     }
 
-    public JsonObject getDeliveryAddress(){
-        JsonObject addressDelivery = new JsonObject();
-        addressDelivery.addProperty("nameUser" , nameDeliveryAddress.getText());
-        addressDelivery.addProperty("addressUser", addressdeliveryAddress.getText());
-        addressDelivery.addProperty("cityUser", citydeliveryAddress.getText());
-        addressDelivery.addProperty("countryUser", countrydeliveryAddress.getText());
-        addressDelivery.addProperty("mobileUser", mobiledeliveryAddress.getText());
-
-
+    public JSONObject getDeliveryAddress(){
+        JSONObject addressDelivery = new JSONObject();
+        addressDelivery.put("nameUser" , nameDeliveryAddress.getText());
+        addressDelivery.put("addressUser", addressdeliveryAddress.getText());
+        addressDelivery.put("cityUser", citydeliveryAddress.getText());
+        addressDelivery.put("countryUser", countrydeliveryAddress.getText());
+        addressDelivery.put("mobileUser", mobiledeliveryAddress.getText());
         return addressDelivery;
     }
 
